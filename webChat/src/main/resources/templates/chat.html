@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./css/javajo.css" />
+<title>chat</title>
+</head>
+<body>
+<div id="response"></div>
+
+<div id="inputArea">
+
+<div>
+	<input type="text" id="room" maxlength="8" placeholder="Room" />
+	<input type="text" id="name" maxlength="8" placeholder="Your Name" />
+	<button id="connect" class="button">Connect</button>
+	<input type="text" id="message" placeholder="message" />
+	<button id="send" class="button" disabled="disabled">Send</button>
+
+</div>
+<button id="disconnect" class="button footer" disabled="disabled">Disconnect</button>
+
+</div>
+
+
+
+</body>
+<script src="./js/Stomp.js"></script>
+<script src="./js/msg.js"></script>
+</html>
